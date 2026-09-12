@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browse Cars - Petals Car Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Petals Car Rental</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vehicles.html">Browse Cars</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="filters">
+    <select id="type-filter">
+      <option value="">All Types</option>
+      <option value="sedan">Sedan</option>
+      <option value="suv">SUV</option>
+      <option value="hatchback">Hatchback</option>
+    </select>
+    <input type="date" id="start-date" placeholder="Pickup Date">
+    <input type="date" id="end-date" placeholder="Return Date">
+    <button class="btn-primary">Search</button>
+  </section>
+
+  <section class="car-grid">
+    <div class="car-card">
+      <img src="images/car-placeholder.jpg" alt="Toyota Corolla">
+      <h3>Toyota Corolla</h3>
+      <p>Sedan • NPR 3,500/day</p>
+      <span class="status available">Available</span>
+      <button class="btn-primary">Book Now</button>
+    </div>
+    <div class="car-card">
+      <img src="images/car-placeholder.jpg" alt="Hyundai Creta">
+      <h3>Hyundai Creta</h3>
+      <p>SUV • NPR 5,000/day</p>
+      <span class="status available">Available</span>
+      <button class="btn-primary">Book Now</button>
+    </div>
+    <div class="car-card">
+      <img src="images/car-placeholder.jpg" alt="Suzuki Alto">
+      <h3>Suzuki Alto</h3>
+      <p>Hatchback • NPR 2,500/day</p>
+      <span class="status maintenance">Under Maintenance</span>
+      <button class="btn-primary" disabled>Unavailable</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Petals Car Rental. CSY2088 Group Project.</p>
+  </footer>
+</body>
+</html>
